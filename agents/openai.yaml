@@ -1,0 +1,7 @@
+interface:
+  display_name: "Tailor Resume"
+  short_description: "Rewrite resumes for a target role truthfully."
+  default_prompt: "Use $tailor-resume-for-role to tailor my existing resume to a specific job description without fabricating experience."
+
+policy:
+  allow_implicit_invocation: true
