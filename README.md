@@ -1,7 +1,5 @@
 # tailor_resume_for_role
 
-Goal: Improve interview rates by automatically tailoring resumes to each job description—highlighting the right signals, using the right language, and telling the right story from existing experience.
-
 You can have great experience and still get ignored—not because you’re unqualified, but because your resume doesn’t tell the right story for the role.
 
 This project helps you translate your real experience into a role-specific narrative that aligns with what recruiters and ATS systems are looking for—so you get more callbacks and interviews.
