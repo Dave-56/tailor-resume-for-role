@@ -1,6 +1,6 @@
 # tailor-resume-for-role
 
-Codex skill for tailoring an existing resume to a target role without fabricating experience.
+Portable resume-tailoring skill package for Codex and Claude Code.
 
 ## What it does
 
@@ -8,55 +8,92 @@ Codex skill for tailoring an existing resume to a target role without fabricatin
 - Chooses a credible narrative for the target role
 - Rewrites bullets to be more relevant, ATS-friendly, and recruiter-readable
 - Produces a tailored resume plus a short rationale
+- Preserves truth by avoiding fabricated titles, metrics, tools, or scope
 
 ## Install in Codex
 
-Option 1: copy into your Codex skills directory
+Copy into your Codex skills directory:
 
 ```bash
 ./scripts/install_codex_skill.sh --copy
 ```
 
-Option 2: symlink the repo for easier local editing
+Or symlink the repo for easier local editing:
 
 ```bash
 ./scripts/install_codex_skill.sh --link
 ```
 
-By default the script installs to:
+Default destination:
 
 ```bash
 $CODEX_HOME/skills/tailor-resume-for-role
 ```
 
-If `CODEX_HOME` is not set, it falls back to:
+Fallback when `CODEX_HOME` is unset:
 
 ```bash
 ~/.codex/skills/tailor-resume-for-role
 ```
 
+## Install in Claude Code
+
+Copy the Claude-native skill package:
+
+```bash
+./scripts/install_claude_skill.sh --copy
+```
+
+Or symlink it for local iteration:
+
+```bash
+./scripts/install_claude_skill.sh --link
+```
+
+Default destination:
+
+```bash
+$CLAUDE_HOME/skills/tailor-resume-for-role
+```
+
+Fallback when `CLAUDE_HOME` is unset:
+
+```bash
+~/.claude/skills/tailor-resume-for-role
+```
+
 ## Use
 
-Invoke the skill by name and provide:
+Provide:
 - A target job description
 - A base resume in text or Markdown
 - Any constraints like page limit, location preference, or "do not rename titles"
 
-Example:
+Codex example:
 
 ```text
 Use $tailor-resume-for-role to tailor my resume for this Senior Product Manager role. Keep it to one page and do not overstate my SQL depth.
 ```
 
-## Repo layout
+Claude Code example:
+
+```text
+/tailor-resume-for-role path/to/job_description.md path/to/resume.md
+```
+
+The skill will usually start with a brief `Structure & Narrative Proposal` and then wait for approval before generating the final `Tailored Resume` and `Rationale`.
+
+## Repo Layout
 
 - `SKILL.md`: main Codex skill instructions
 - `agents/openai.yaml`: Codex UI metadata
-- `references/`: workflow, constraints, and examples
-- `assets/templates/`: reusable output templates
-- `scripts/install_codex_skill.sh`: local installer for Codex
+- `references/`: shared workflow, constraints, and examples for the Codex package
+- `assets/templates/`: shared output templates for the Codex package
+- `.claude/skills/tailor-resume-for-role/`: self-contained Claude Code skill package
+- `scripts/install_codex_skill.sh`: installer for Codex
+- `scripts/install_claude_skill.sh`: installer for Claude Code
 
 ## Notes
 
-- This skill is optimized for Codex packaging.
-- The underlying prompt and workflow can still be adapted for other assistants, but their packaging conventions differ.
+- The Codex and Claude Code packages share the same workflow and guardrails.
+- The Claude package is self-contained so it can be copied directly into `~/.claude/skills/`.
