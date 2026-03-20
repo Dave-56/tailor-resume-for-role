@@ -29,14 +29,19 @@ Generic resumes underperform. Recruiters and hiring managers need fast, credible
 
 ## Example Workflow
 1. Provide a target job description and a base resume (plain text/Markdown).
-2. The skill extracts must-haves, outcomes, and seniority signals.
-3. It maps your experience to those signals, finding the strongest evidence.
-4. It rewrites bullets with impact-first language and relevant context.
-5. It outputs a tailored resume plus a concise rationale and coverage map.
+2. Preflight check-in (interactive): the skill proposes a Structure & Narrative plan (section order, positioning, tone, page limit, emphasis). You approve or adjust.
+3. The skill extracts must-haves, outcomes, and seniority signals.
+4. It maps your experience to those signals, finding the strongest evidence.
+5. It rewrites bullets with impact-first language and relevant context.
+6. It outputs a tailored resume plus a concise rationale and coverage map.
 
 ## Inputs / Outputs
 - Inputs: Target job description (text), Base resume (text/Markdown), Optional preferences (location, remote, target seniority).
-- Outputs: Tailored resume (Markdown or text), Rationale (coverage map, trade-offs, remaining gaps), Risk flags (potential credibility concerns).
+- Outputs: Structure & Narrative proposal (interactive), Tailored resume (Markdown or text), Rationale (coverage map, trade-offs, remaining gaps), Risk flags (potential credibility concerns).
+
+## Interactive Mode
+- First, you receive a concise Structure & Narrative Proposal to confirm section order (e.g., Core Skills at top vs bottom), positioning, tone, page limit, and emphasis.
+- Reply APPROVE to proceed as proposed, or provide edits. After approval, the skill generates the final Tailored Resume and Rationale.
 
 ## Limitations
 - No fabrication; results depend on your real experience.
@@ -60,4 +65,3 @@ Generic resumes underperform. Recruiters and hiring managers need fast, credible
 - `test_cases/`: Minimal input/output cases to validate behavior.
 - `output_samples/`: Example tailored resumes and rationales for reference.
 - `scripts/` (optional): CLI or SDK stubs to invoke the skill.
-

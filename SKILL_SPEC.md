@@ -18,6 +18,8 @@ Produce a role-tailored, ATS-aware, recruiter-friendly resume that maximizes cre
   - Non-negotiables (e.g., do not rename job titles).
 
 ## Outputs
+- Structure & Narrative Proposal (interactive):
+  - Concise plan for section order, positioning, emphasis, tone, page limit, and open questions to confirm before writing.
 - Tailored Resume (Markdown/text):
   - Header, Role-aligned summary, Core skills, Experience (rewritten bullets), Projects (if relevant), Education, Certifications (optional).
 - Rationale (Markdown/text):
@@ -29,6 +31,8 @@ Produce a role-tailored, ATS-aware, recruiter-friendly resume that maximizes cre
   - Version info, date, role title used, page length.
 
 ## Workflow / Reasoning Steps
+0. Preflight Check-In (interactive)
+   - Draft a Structure & Narrative Proposal (see Outputs) and ask the user to approve or adjust. If approved or skipped, proceed.
 1. Parse JD
    - Extract must-haves, nice-to-haves, responsibilities, outcomes, and level signals.
    - Identify domain/industry cues and anti-signals.
@@ -82,6 +86,7 @@ Produce a role-tailored, ATS-aware, recruiter-friendly resume that maximizes cre
 - Coherent narrative matching the seniority and scope of the JD.
 - No fabricated or inflated experience; no contradictions.
 - Core skills and summary reflect the role’s needs, truthfully.
+- When interactive, user confirms structure and narrative before final output.
 
 ## Failure Modes / What To Avoid
 - Keyword mirroring without substance.
@@ -91,4 +96,3 @@ Produce a role-tailored, ATS-aware, recruiter-friendly resume that maximizes cre
 - Mismatched seniority or confusing chronology.
 - Formatting that breaks ATS parsing (tables, images).
 - Ignoring gaps without offering positioning guidance.
-

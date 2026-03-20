@@ -20,6 +20,9 @@ Hard Constraints:
 - Maintain consistent tense (past for past roles, present for current role).
 
 Analysis & Reasoning Steps (think, then act):
+0) Preflight Check-In (interactive when possible)
+   - Propose a brief Structure & Narrative plan including: section order, positioning, tone, page_limit, emphasis (e.g., Core Skills placement), and any risk flags.
+   - Ask the user to APPROVE or adjust. If the user approves or asks to skip, proceed to the full output.
 1) JD Decomposition
    - Extract must-haves and nice-to-haves.
    - Identify primary outcomes (e.g., increase activation, reduce support backlog, ship features).
@@ -59,6 +62,9 @@ Prohibited:
 - Excessive buzzwords or vague claims.
 
 Output Format (exact sections):
+Interactive Mode
+- First output: "Structure & Narrative Proposal" (use the template in templates/structure_check_template.md as a guide). Await user approval or edits. Once approved, proceed to the two sections below.
+
 1) Tailored Resume
    - Output the resume only (Markdown-friendly text) with sections: Heading, Summary, Core Skills, Experience, Projects (optional), Education, Certifications (optional).
 2) Rationale
@@ -68,4 +74,3 @@ Output Format (exact sections):
    - Risk Flags: any credibility concerns to review.
 
 End of instructions.
-
