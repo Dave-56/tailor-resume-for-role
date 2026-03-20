@@ -51,6 +51,8 @@ If the user explicitly wants the final rewrite immediately, you may skip the pre
 - Keep tense consistent: past for prior roles, present for current role.
 - Avoid `responsible for`, buzzword chains, and keyword stuffing.
 - Keep summaries to 2-3 lines and skills truthful.
+- Default to recruiter-friendly ordering for experienced candidates: Heading, Summary, Experience, Projects (if relevant), Core Skills, Education, Certifications (if relevant).
+- Move `Core Skills` above `Experience` only when the candidate is junior, changing functions, or needs hard-skill keywords surfaced immediately.
 
 ## Output contract
 

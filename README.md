@@ -83,6 +83,18 @@ Claude Code example:
 
 The skill will usually start with a brief `Structure & Narrative Proposal` and then wait for approval before generating the final `Tailored Resume` and `Rationale`.
 
+For experienced candidates, the default resume order is usually:
+
+```text
+Summary
+Experience
+Projects (if relevant)
+Core Skills
+Education
+```
+
+The skill only moves `Core Skills` higher when keyword visibility clearly matters more than narrative flow, such as for early-career or career-transition resumes.
+
 ## Repo Layout
 
 - `SKILL.md`: main Codex skill instructions

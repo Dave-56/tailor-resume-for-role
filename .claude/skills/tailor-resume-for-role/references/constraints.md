@@ -18,6 +18,7 @@ Use this reference when you need guardrails for the rewrite.
 - Use natural keyword coverage instead of stuffing.
 - Keep summaries brief and role-aligned.
 - Group skills in a way that helps scanning.
+- For experienced candidates, let experience carry the narrative before the skills section unless there is a strong keyword-discovery reason to do otherwise.
 
 ## Gaps Handling
 

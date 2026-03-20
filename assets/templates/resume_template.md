@@ -6,10 +6,6 @@ Candidate Name | City, ST or Remote | email | LinkedIn | Portfolio
 ## Summary
 2-3 lines aligned to the target role, highlighting outcomes and scope.
 
-## Core Skills
-- Group skills by domain
-- Keep every skill truthful and relevant
-
 ## Experience
 Company | Title | Dates | Location
 - Impact-first bullet with clear outcome and context
@@ -21,6 +17,10 @@ Company | Title | Dates | Location
 
 ## Projects
 Include only when they strengthen the target narrative.
+
+## Core Skills
+- Group skills by domain
+- Keep every skill truthful and relevant
 
 ## Education
 Degree, Institution

@@ -70,11 +70,15 @@ Aim for concise, recruiter-readable bullets that prove role fit quickly.
 Expected sections:
 - Heading
 - Summary
-- Core Skills
 - Experience
 - Projects, if relevant
+- Core Skills
 - Education
 - Certifications, if relevant
+
+Ordering guidance:
+- For experienced candidates, default to `Summary -> Experience -> Projects (if relevant) -> Core Skills -> Education`.
+- Move `Core Skills` above `Experience` only when early-career context, career transition, or ATS keyword visibility clearly justifies it.
 
 Default page guidance:
 - 1 page for early or mid-career candidates

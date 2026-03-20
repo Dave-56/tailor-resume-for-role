@@ -6,9 +6,9 @@ Positioning
 Section Order
 - Heading
 - Summary
-- Core Skills
 - Experience
 - Projects (optional)
+- Core Skills
 - Education
 - Certifications (optional)
 
@@ -28,7 +28,7 @@ Non-Negotiables
 - No fabrication of tools, metrics, or scope
 
 Open Questions
-- Keep Core Skills near the top?
+- Is there any reason to move Core Skills higher for keyword visibility?
 - Which thread should be primary?
 - Any location or page-limit preference?
 
