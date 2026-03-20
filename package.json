@@ -1,0 +1,10 @@
+{
+  "name": "tailor-resume-for-role",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Skills and utilities for tailoring resumes to target roles.",
+  "license": "MIT",
+  "dependencies": {
+    "docx": "^9.6.1"
+  }
+}

@@ -10,15 +10,17 @@ Use this reference when you need the full reasoning flow for a resume-tailoring 
 
 ## Step 0: Preflight Check-In
 
-When possible, begin with a short `Structure & Narrative Proposal` covering:
+If both the job description and the base resume are available, begin with a short `Structure & Narrative Proposal` covering:
 - Positioning for the role
+- Key strengths, partial matches, and gaps
+- Proposed rewrite approach
 - Section order
 - Emphasis and de-emphasis
 - Tone
 - Page limit
 - Risk flags or open questions
 
-Wait for approval unless the user asks to skip or clearly wants the final rewrite immediately.
+Wait for approval before drafting the final resume unless the user asks to skip or clearly wants the final rewrite immediately.
 
 ## Step 1: JD Decomposition
 

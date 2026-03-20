@@ -3,6 +3,11 @@
 Positioning
 - One-line positioning aligned to the JD.
 
+Strengths, Partial Matches, and Gaps
+- What clearly matches
+- What is adjacent but not direct
+- What should be handled carefully or left out
+
 Section Order
 - Heading
 - Summary

@@ -23,7 +23,7 @@ If either required input is missing, ask only for the missing artifact.
 
 ## Default workflow
 
-1. Start with a brief `Structure & Narrative Proposal` before rewriting when the interaction supports it.
+1. If the user has provided both the target job description and the base resume, start with a brief `Structure & Narrative Proposal` before rewriting.
 2. Parse the job description for must-haves, outcomes, scope, seniority, stakeholders, and domain cues.
 3. Audit the resume against those signals and note clear strengths, partial matches, and gaps.
 4. Choose a credible narrative that frontloads the most relevant experience without changing facts.
@@ -32,7 +32,7 @@ If either required input is missing, ask only for the missing artifact.
    - `Tailored Resume`
    - `Rationale`
 
-If the user explicitly wants the final rewrite immediately, you may skip the preflight and note that assumption.
+If the user explicitly wants the final rewrite immediately, you may skip the preflight and note that assumption. Otherwise, default to the preflight proposal plus approval check before producing the final rewrite.
 
 ## Non-negotiables
 
@@ -63,6 +63,8 @@ Final output should contain exactly these sections:
 Use these packaged templates as needed:
 - [./assets/templates/resume_template.md](./assets/templates/resume_template.md)
 - [./assets/templates/rationale_template.md](./assets/templates/rationale_template.md)
+
+If the user wants the final resume delivered as a `.docx` file, read `skills/docx/SKILL.md` before generating the document and follow its creation or editing workflow exactly.
 
 ## References
 

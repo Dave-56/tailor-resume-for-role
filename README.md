@@ -2,6 +2,8 @@
 
 Portable resume-tailoring skill package for Codex and Claude Code.
 
+This repo also includes a shared `docx` skill under `skills/docx/` so tailored resumes can be delivered as validated Word documents when needed.
+
 ## What it does
 
 - Analyzes a job description and a base resume
@@ -81,7 +83,7 @@ Claude Code example:
 /tailor-resume-for-role path/to/job_description.md path/to/resume.md
 ```
 
-The skill will usually start with a brief `Structure & Narrative Proposal` and then wait for approval before generating the final `Tailored Resume` and `Rationale`.
+If the user provides both the job description and the resume, the skill should first produce a brief `Structure & Narrative Proposal` that calls out strengths, gaps, and the proposed approach, then wait for approval before generating the final `Tailored Resume` and `Rationale`.
 
 For experienced candidates, the default resume order is usually:
 
@@ -109,3 +111,4 @@ The skill only moves `Core Skills` higher when keyword visibility clearly matter
 
 - The Codex and Claude Code packages share the same workflow and guardrails.
 - The Claude package is self-contained so it can be copied directly into `~/.claude/skills/`.
+- For `.docx` generation or editing, follow the authoritative instructions in [skills/docx/SKILL.md](skills/docx/SKILL.md).

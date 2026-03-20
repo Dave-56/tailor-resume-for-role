@@ -3,6 +3,11 @@
 Positioning
 - One-line positioning aligned to the JD
 
+Strengths, Partial Matches, and Gaps
+- What clearly matches
+- What is adjacent but not direct
+- What should be handled carefully or left out
+
 Section Order
 - Heading
 - Summary
@@ -33,4 +38,4 @@ Open Questions
 - What page target should be used?
 
 Instructions
-- Ask the user to approve or adjust before producing the final rewrite when the interaction supports it.
+- Ask the user to approve or adjust before producing the final rewrite.
