@@ -7,6 +7,7 @@ This repo also includes a shared `docx` skill under `skills/docx/` so tailored r
 ## What it does
 
 - Analyzes a job description and a base resume
+- Chooses one primary resume source when multiple variants are available, using a second source only as a narrow supplement when needed
 - Chooses a credible narrative for the target role
 - Rewrites bullets to be more relevant, ATS-friendly, and recruiter-readable
 - Produces a tailored resume plus a short rationale
@@ -90,7 +91,11 @@ If the user wants a Word version of the final resume, the agent should:
 - use the unpack -> edit XML -> repack workflow for edits to existing `.docx` files
 - validate output with `skills/docx/scripts/office/validate.py`
 
+Project-level docx rules in `CODEX.md` and `CLAUDE.md` further constrain resume formatting, including Lato typography, grayscale section dividers, US Letter page settings, and exact spacing/color conventions.
+
 If the user provides both the job description and the resume, the skill should first produce a brief `Structure & Narrative Proposal` that calls out strengths, gaps, and the proposed approach, then wait for approval before generating the final `Tailored Resume` and `Rationale`.
+
+That preflight should also surface borderline hard-screen items early, such as minimum years of experience, required domain depth, or required management scope, instead of saving those risks only for the final rationale.
 
 For experienced candidates, the default resume order is usually:
 

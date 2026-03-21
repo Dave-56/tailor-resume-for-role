@@ -9,6 +9,7 @@ Use this reference when you need guardrails for the rewrite.
 - Do not copy job-description bullets verbatim.
 - Keep the output ATS-friendly with standard headings and simple bullets.
 - Quantify only when the number is present or clearly supported.
+- When multiple resume variants exist, keep one primary source narrative dominant instead of blending multiple versions equally.
 
 ## Style Rules
 
@@ -19,6 +20,9 @@ Use this reference when you need guardrails for the rewrite.
 - Keep summaries brief and role-aligned.
 - Group skills in a way that helps scanning.
 - For experienced candidates, let experience carry the narrative before the skills section unless there is a strong keyword-discovery reason to do otherwise.
+- Optimize for role specificity, not completeness.
+- Remove overlapping bullets even when both are individually strong.
+- Prioritize the first screen of the resume for the target role's most important signals.
 
 ## Gaps Handling
 
@@ -35,3 +39,6 @@ When the candidate lacks a direct requirement:
 - Seniority inflation
 - Formatting that breaks ATS parsing
 - Hiding meaningful gaps instead of addressing them
+- Merging multiple resume variants into a blurry hybrid story
+- Leaving platform-general or PM-general phrasing when the JD calls for a more specific narrative
+- Returning a draft before checking for duplicate ideas across bullets

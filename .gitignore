@@ -1,3 +1,5 @@
 node_modules/
 outputs/
 scripts/generate_api_strategy_resume_docx.js
+__pycache__/
+*.pyc

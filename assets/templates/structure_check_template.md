@@ -36,6 +36,8 @@ Open Questions
 - Which strengths should be the main narrative thread?
 - Any location or seniority preferences to mention?
 - What page target should be used?
+- Are there any borderline hard requirements that should be called out now, such as minimum years of experience, required domain depth, or management scope?
+- If a minimum-qualification screen looks borderline, what is the truthful mitigation strategy in the rewrite?
 
 Instructions
 - Ask the user to approve or adjust before producing the final rewrite.

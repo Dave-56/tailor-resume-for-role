@@ -14,6 +14,7 @@ Required:
 - Base resume in text or Markdown
 
 Optional:
+- One supplemental resume variant when it adds clearly missing evidence
 - Target seniority
 - Location or remote preference
 - Page limit
@@ -21,14 +22,25 @@ Optional:
 
 If either required input is missing, ask only for the missing artifact.
 
+When multiple base resumes are available, do not blend them freely. Choose one **primary** base resume that best matches the target role and use at most one **supplemental** resume only to pull in clearly missing, non-conflicting evidence. Preserve the primary resume's chronology, voice, and narrative spine.
+
 ## Default workflow
 
 1. If the user has provided both the target job description and the base resume, start with a brief `Structure & Narrative Proposal` before rewriting.
 2. Parse the job description for must-haves, outcomes, scope, seniority, stakeholders, and domain cues.
-3. Audit the resume against those signals and note clear strengths, partial matches, and gaps.
-4. Choose a credible narrative that frontloads the most relevant experience without changing facts.
-5. Rewrite bullets so they are impact-first, concise, and role-aligned.
-6. Produce:
+3. In the preflight proposal, explicitly flag any borderline or missing hard requirements under `Open Questions`, especially minimum years of experience, required domain depth, people-management scope, or required technical background.
+4. If multiple resumes are provided, select one primary source resume before drafting. Use a second resume only as targeted support for missing evidence, and state that choice in the preflight proposal.
+5. Audit the chosen resume against those signals and note clear strengths, partial matches, and gaps.
+6. Choose a credible narrative that frontloads the most relevant experience without changing facts.
+7. Rewrite bullets so they are impact-first, concise, and role-aligned.
+8. Run a mandatory hidden QA pass before showing the result. Check for:
+   - bullet overlap or repeated ideas
+   - generic phrasing that could fit many PM roles
+   - weak JD coverage on the top 3 must-have signals
+   - unflagged hard-screen risks that should have appeared in preflight
+   - overuse of less relevant projects or older experience
+   - claims that feel stronger than the source evidence
+9. Produce:
    - `Tailored Resume`
    - `Rationale`
 
@@ -41,6 +53,7 @@ If the user explicitly wants the final rewrite immediately, you may skip the pre
 - Paraphrase naturally instead of mirroring the job description.
 - Keep formatting ATS-friendly: simple headings, bullets, no tables, no images.
 - Use numbers only when they are supported by the provided material.
+- Do not merge multiple resume variants into a hybrid narrative unless one primary source remains clearly dominant.
 
 ## Writing rules
 
@@ -51,6 +64,9 @@ If the user explicitly wants the final rewrite immediately, you may skip the pre
 - Keep summaries to 2-3 lines and skills truthful.
 - Default to recruiter-friendly ordering for experienced candidates: Heading, Summary, Experience, Projects (if relevant), Core Skills, Education, Certifications (if relevant).
 - Move `Core Skills` above `Experience` only when the candidate is junior, changing functions, or needs hard-skill keywords surfaced immediately.
+- Favor one sharp narrative over comprehensive coverage. If a good bullet does not help the target role, cut or shorten it.
+- For role-specific tailoring, optimize the top third of the resume first: summary, most recent role, and first 3-5 bullets should make the target fit obvious within 10 seconds.
+- Remove or rewrite bullets that communicate materially the same idea, even if both are individually strong.
 
 ## Output contract
 
@@ -59,6 +75,8 @@ When using the interactive flow, follow the structure in [./assets/templates/str
 Final output should contain exactly these sections:
 - `Tailored Resume`
 - `Rationale`
+
+Do not expose the hidden QA checklist unless the user asks how the resume was evaluated.
 
 Use these packaged templates as needed:
 - [./assets/templates/resume_template.md](./assets/templates/resume_template.md)
