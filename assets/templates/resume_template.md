@@ -1,7 +1,7 @@
 # Resume Template
 
 ## Heading
-Candidate Name | City, ST or Remote | email | LinkedIn | Portfolio
+Candidate Name | City, ST (or Remote) | email@domain.com | LinkedIn | GitHub/Portfolio
 
 ## Summary
 2-3 lines aligned to the target role, highlighting outcomes and scope.
@@ -16,19 +16,20 @@ Company | Title | Dates | Location
 - Prioritize the bullets that best prove fit
 
 ## Projects
-Include only when they strengthen the target narrative.
+Project Name | Role | Dates
+- Brief outcome aligned to the target role
 
 ## Core Skills
 - Group skills by domain
 - Keep every skill truthful and relevant
 
 ## Education
-Degree, Institution
+Degree, Institution - Year
 
 ## Certifications
-Include only when relevant.
+Certification - Year
 
 ## Notes
-- No tables or images
-- Keep chronology intact
-- Use concise, specific bullets
+- Keep clean headings, no tables or images
+- Use past tense for prior roles and present tense for current work
+- Keep bullets concise and specific

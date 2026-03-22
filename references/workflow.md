@@ -4,10 +4,10 @@ Use this reference when you need the full reasoning flow for a resume-tailoring 
 
 ## Inputs
 
-- `job_description`: Full target role text
-- `base_resume`: Candidate resume in text or Markdown
+- `job_description`: Full target role text, usually pasted by the user
+- `base_resume`: Candidate resume as pasted text, uploaded `.docx`, or file path
 - `supplemental_resume` (optional): a second resume variant used only for clearly missing evidence
-- `preferences` (optional): target seniority, location, page limit, constraints
+- `preferences` (optional): target seniority, location, page limit, output format, constraints, `skip_preflight`
 
 ## Internal Pipeline
 
@@ -57,6 +57,8 @@ If multiple resumes are available, the preflight must also state:
 - why the primary source is the better narrative fit for the role
 
 Wait for approval before drafting the final resume unless the user asks to skip or clearly wants the final rewrite immediately.
+
+Treat `skip_preflight` as `no` when omitted. If the user explicitly sets `skip_preflight: yes`, you may draft immediately and should note that preflight was skipped by request.
 
 If preflight finds a `borderline` or `does not meet` hard requirement, ask up to 3 short follow-up questions before drafting unless `skip_preflight: yes`. Use simple, everyday English and include examples when helpful to jog the user's memory.
 

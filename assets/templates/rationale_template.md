@@ -1,22 +1,20 @@
-# Rationale Template
+# Rationale Report Template
 
 ## Coverage Map
-- JD Requirement: requirement
-  - Evidence: role or bullet proving it
+- JD Requirement: <requirement>
+  - Evidence: <role, bullet reference, or excerpt>
 
 ## Narrative Choices
 - Positioning selected and why
-- What was prioritized
-- What was shortened or omitted
+- Prioritized experiences and bullets
+- Trade-offs made
 
 ## Remaining Gaps
-- Gap: what is missing
-  - Interview positioning: how to address it honestly
+- Gap: <describe gap>
+  - Interview positioning: <how to address credibly>
 
 ## Risk Flags
 - Any title, metric, tooling, or chronology items that need human review
 
 ## Metadata
-- Role title used
-- Date
-- Page length
+- Role title used | Date | Page length | Notes
