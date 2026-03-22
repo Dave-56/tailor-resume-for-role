@@ -1,5 +1,13 @@
 # Structure & Narrative Proposal (Preflight)
 
+Coach's Read
+- Overall fit: strong, medium, or stretch
+- Simple fit score, for example 7/10
+- Is any gap a likely hard stop?
+- Biggest risk
+- What is probably fine
+- Best strategy for this application
+
 Positioning
 - One-line positioning aligned to the JD
 

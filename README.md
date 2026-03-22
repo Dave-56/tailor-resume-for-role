@@ -8,6 +8,8 @@ This repo also includes a shared `docx` skill under `skills/docx/` so tailored r
 
 - Analyzes a job description and a base resume
 - Chooses one primary resume source when multiple variants are available, using a second source only as a narrow supplement when needed
+- Gives a coach-style preflight read on fit, real risks, and likely hard stops
+- Asks targeted follow-up questions to recover missing experience and turn it into resume-ready impact
 - Chooses a credible narrative for the target role
 - Rewrites bullets to be more relevant, ATS-friendly, and recruiter-readable
 - Produces a tailored resume plus a short rationale
@@ -69,21 +71,57 @@ Fallback when `CLAUDE_HOME` is unset:
 ## Use
 
 Provide:
-- A target job description
-- A base resume in text or Markdown
-- Any constraints like page limit, location preference, or "do not rename titles"
+- A target job description, usually pasted into the prompt
+- A base resume as pasted text, an uploaded `.docx`, or a file path
+- Any optional constraints like page target, output format, or "do not rename titles"
 
 Codex example:
 
 ```text
-Use $tailor-resume-for-role to tailor my resume for this Senior Product Manager role. Keep it to one page and do not overstate my SQL depth.
+Use $tailor-resume-for-role
+
+job_description:
+[paste JD]
+
+resume:
+[upload .docx or paste resume]
+
+page_target: 1 page
+non_negotiables:
+- do not overstate my SQL depth
 ```
 
 Claude Code example:
 
 ```text
-/tailor-resume-for-role path/to/job_description.md path/to/resume.md
+/tailor-resume-for-role
+
+job_description:
+[paste JD]
+
+resume:
+[upload .docx, paste resume, or provide file path]
+
+skip_preflight: no
 ```
+
+If `skip_preflight` is omitted, the skill should default to preflight first and wait for approval.
+
+The preflight is meant to feel like a strong career coach, not just a parser. It should:
+- explain overall fit in plain English
+- say whether a gap looks like a likely hard stop, a manageable risk, or just an interview topic
+- ask short follow-up questions to uncover missing experience
+- ask one more impact question when the experience is real but the result is still vague
+
+Internally, the architecture should stay modular:
+- `Intake`
+- `Preflight Analyzer`
+- `Gap Recovery`
+- `Draft Builder`
+- `Micro-QA Layer`
+- `Controller QA`
+
+But the user should experience one coach, not a chain of internal systems.
 
 If the user wants a Word version of the final resume, the agent should:
 - read `skills/docx/SKILL.md`
