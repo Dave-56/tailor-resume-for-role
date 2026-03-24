@@ -39,6 +39,12 @@ Non-Negotiables
 - Preserve titles, employers, dates, and chronology
 - No fabrication of tools, metrics, or scope
 
+Evidence Risks
+- Which top 3-5 anchor bullets are already strong enough to draft from?
+- Is any anchor bullet still too responsibility-heavy?
+- Would one more answer materially improve the strongest version of the resume?
+- If stronger evidence does not exist, what is the truthful fallback?
+
 Open Questions
 - Is there any reason to move Core Skills higher for keyword visibility?
 - Which strengths should be the main narrative thread?

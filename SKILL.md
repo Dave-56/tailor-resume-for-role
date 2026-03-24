@@ -27,7 +27,7 @@ Default behavior:
 - Treat `skip_preflight` as `no` when omitted.
 - In preflight, act like a coach, not just a scanner. Help the user understand how strong the fit is, what is a real risk, and what can be handled with better framing.
 - If preflight finds a borderline or missing hard requirement, ask up to 3 short follow-up questions before drafting to help the user remember relevant experience.
-- If the user shares relevant experience but the impact is still unclear, ask 1 short follow-up question about what changed or what the result was.
+- Before drafting, inspect the top 3-5 anchor bullets the target role most needs. If any anchor bullet is still `responsibility-only` and stronger evidence may exist, ask 1 short targeted impact follow-up round before drafting.
 - When asking follow-up questions, briefly say why you are asking them.
 - Do not repeat the same follow-up block.
 
@@ -71,6 +71,17 @@ Internally, use this flow:
 
 Do not expose the internal pipeline to the user. The user should experience one clear coach-like interaction, not a chain of internal systems.
 
+## Evidence quality rubric
+
+Use this brief rubric for the top 3-5 anchor bullets that need to carry the target role:
+
+- `outcome-backed`: names a real change, improvement, or result
+- `decision-backed`: shows judgment, prioritization, trade-off, or direction-setting that changed what happened
+- `scope-backed`: proves meaningful scope, complexity, ownership, or stakeholder reach even when the end result is not measurable
+- `responsibility-only`: lists tasks or ownership without showing what changed, why it mattered, or how large the work was
+
+Do not let the most important bullets for the target role remain `responsibility-only` when stronger evidence can still be recovered truthfully.
+
 ## Default workflow
 
 1. If the user has provided both the target job description and the base resume, start with a brief `Structure & Narrative Proposal` before rewriting.
@@ -95,7 +106,14 @@ Do not expose the internal pipeline to the user. The user should experience one 
    - Keep the questions concrete and easy to answer.
    - Ask only questions that could materially improve the resume truthfully.
    - Do not repeat the same question set twice.
-7. If the user gives relevant experience but the impact still sounds like a task list, ask 1 short impact follow-up before drafting.
+7. Before drafting, inspect the top 3-5 anchor bullets that matter most for the target role and classify them using the evidence rubric.
+   - If any anchor bullet is still `responsibility-only` and stronger evidence may plausibly exist, ask 1 short targeted impact follow-up round before drafting.
+   - Ask questions like:
+     - "What changed because of that?"
+     - "Did it make onboarding faster, reduce confusion, cut repeat issues, or help teams self-serve?"
+     - "If there was no metric, what was the real decision, scope, or outcome?"
+   - Briefly explain why you are asking, for example: "I’m asking this so the strongest bullets show impact, not just responsibilities."
+8. If the user gives relevant experience but the impact still sounds like a task list, ask 1 short impact follow-up before drafting.
    - Good impact follow-up style:
      - "What changed because of that?"
      - "Did it make onboarding faster, reduce confusion, cut repeat issues, or help teams self-serve?"
@@ -108,29 +126,32 @@ Do not expose the internal pipeline to the user. The user should experience one 
      - "unblocked deployments faster"
      - "surfaced recurring issues that informed product improvements"
    - Briefly explain why you are asking, for example: "I’m asking this so the final bullets show impact, not just responsibilities."
-8. If multiple resumes are provided, select one primary source resume before drafting. Use a second resume only as targeted support for missing evidence, and state that choice in the preflight proposal.
-9. Audit the chosen resume against those signals and note clear strengths, partial matches, and gaps.
-10. Choose a credible narrative that frontloads the most relevant experience without changing facts.
-11. Rewrite bullets so they are impact-first, concise, and role-aligned.
-12. Run the internal `Micro-QA Layer`. Each QA has one narrow job:
+   - If the user cannot provide stronger evidence, say so internally, then draft the cleanest truthful `scope-backed` bullet available instead of inventing impact.
+9. If multiple resumes are provided, select one primary source resume before drafting. Use a second resume only as targeted support for missing evidence, and state that choice in the preflight proposal.
+10. Audit the chosen resume against those signals and note clear strengths, partial matches, and gaps.
+11. Choose a credible narrative that frontloads the most relevant experience without changing facts.
+12. Rewrite bullets so they are impact-first, concise, and role-aligned.
+   - Optimize for the strongest final resume, not the fastest acceptable draft.
+   - If a likely anchor bullet cannot be made stronger than `responsibility-only`, either recover more evidence first, rewrite it as an honest `scope-backed` bullet, or replace it with stronger proof.
+13. Run the internal `Micro-QA Layer`. Each QA has one narrow job:
    - `Fit QA`: JD coverage, fit strength, likely hard stops, top-requirement coverage
-   - `Evidence QA`: truthfulness, supportability, honest gap-bridging, metric support
+   - `Evidence QA`: truthfulness, supportability, honest gap-bridging, metric support, and anchor-bullet evidence quality
    - `Editorial QA`: narrative tightness, redundancy, section value, whether any section is taking up space without helping
    - `Page QA`: top-half strength, cut order, page discipline, whether projects or lower-signal sections should be removed first
-13. Run `Controller QA` after the micro-QAs.
+14. Run `Controller QA` after the micro-QAs.
    - The controller collects findings from the micro-QAs, resolves conflicts, decides what needs revision, and determines what should be surfaced to the user.
    - The controller should always surface a fit read to the user, including overall fit, a simple fit score, and a short reason.
    - Micro-QAs should propose findings only. They should not speak to the user directly, ask their own extra questions, or revise the draft on their own.
    - The controller is the only layer that can decide whether to:
      - revise the draft
-     - ask one more clarification question
+     - ask one more clarification question when an anchor bullet is still too weak and stronger evidence may exist
      - return the result to the user
    - Internally, the controller should think in terms of:
      - `decision`
      - `priority_issues`
      - `draft_changes`
      - `user_surface`
-14. Produce:
+15. Produce:
    - `Tailored Resume`
    - `Rationale`
 

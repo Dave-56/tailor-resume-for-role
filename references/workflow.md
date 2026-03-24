@@ -80,6 +80,14 @@ Examples:
 Only ask questions that could materially improve the resume truthfully. Keep the list short and focused.
 Do not repeat the same follow-up block.
 
+Before drafting, inspect the top 3-5 anchor bullets the target role most needs and classify them using this evidence rubric:
+- `outcome-backed`: names a real result, improvement, or change
+- `decision-backed`: shows judgment, prioritization, or a decision that changed what happened
+- `scope-backed`: proves meaningful scope, complexity, or stakeholder reach even without a hard result
+- `responsibility-only`: lists tasks or ownership without showing what changed, why it mattered, or how large the work was
+
+If any likely anchor bullet is still `responsibility-only` and stronger evidence may plausibly exist, ask 1 short targeted impact follow-up round before drafting.
+
 If the user gives relevant experience but the impact still sounds vague or task-based, ask 1 short impact follow-up before drafting.
 
 Briefly say why you are asking, for example:
@@ -99,6 +107,12 @@ Good qualitative impact examples:
 - "unblocked deployments faster"
 - "surfaced recurring issues that informed product improvements"
 
+If the user cannot provide stronger evidence after one targeted follow-up round:
+- note internally that no stronger evidence was available
+- rewrite the bullet as the strongest truthful `scope-backed` version you can
+- do not invent metrics or outcomes
+- stop entirely only when the missing evidence affects a likely hard screen that makes drafting misleading
+
 ## Step 1: JD Decomposition
 
 Extract:
@@ -117,6 +131,12 @@ Also classify each hard requirement as:
 
 If any hard requirement is `borderline` or `does not meet`, it should be called out in preflight under `Open Questions` or `Risk Flags`, not saved only for the final rationale.
 
+Select the 3-5 anchor signals that should control the top third of the resume.
+- Start with repeated or explicit must-haves
+- Prioritize core outcomes, hard screens, level signals, and stakeholder or domain cues that would decide a recruiter screen quickly
+- Prefer signals that can be proven in the summary, most recent role, and first few bullets
+- Do not choose low-value nice-to-haves when stronger must-have proof is available
+
 ## Step 2: Resume Audit
 
 If multiple resumes are provided, first choose a primary source resume:
@@ -133,6 +153,11 @@ Also identify:
 - Weak bullets with vague verbs or no outcome
 - Hidden strengths such as scale, metrics, stakeholder complexity, or cross-functional work
 - Facts that should be preserved exactly because they create credibility
+
+For each anchor signal, choose the best candidate bullet or summary claim available in the source material.
+- Classify each candidate as `outcome-backed`, `decision-backed`, `scope-backed`, or `responsibility-only`
+- Reopen clarification before drafting if any anchor signal is backed only by a `responsibility-only` bullet and stronger evidence may plausibly exist
+- If stronger evidence does not exist, plan either a truthful `scope-backed` rewrite or a different anchor signal with better proof
 
 ## Step 3: Narrative Choice
 
@@ -161,6 +186,12 @@ When deciding what to keep:
 - Drop or compress bullets that repeat the same theme
 - Keep only the projects that materially strengthen the target narrative
 - If two bullets are both strong but overlapping, keep the one with better JD coverage or clearer outcome
+
+When shaping anchor bullets:
+- Prefer `outcome-backed` bullets first
+- Use `decision-backed` bullets when the role values prioritization, strategy, or judgment
+- Use `scope-backed` bullets honestly when that is the strongest truthful evidence available
+- Do not let an anchor bullet remain `responsibility-only` in the final draft unless drafting is being paused for clarification
 
 ## Step 5: Assemble the Resume
 
@@ -212,6 +243,8 @@ Checks:
 - Are metrics, scope, and tools supported?
 - Did the draft bridge gaps honestly instead of inflating them?
 - Did preflight recover missing evidence before labeling something a gap?
+- Are the anchor bullets at least `scope-backed`, with `outcome-backed` or `decision-backed` used when available?
+- If any anchor bullet is still `responsibility-only`, is that because the draft should reopen clarification instead of being returned?
 
 ### Editorial QA
 
@@ -240,7 +273,7 @@ The controller should:
 - resolve conflicts
 - rank the issues by importance
 - decide whether the draft needs revision
-- decide whether one more clarification question is truly needed
+- decide whether one more clarification question is truly needed, especially when an anchor bullet is still `responsibility-only`
 - decide what should be surfaced to the user
 
 The controller should always surface a fit read to the user.
@@ -251,6 +284,15 @@ The controller should always surface a fit read to the user.
   - short reason
 
 The controller is the only layer allowed to decide whether to revise the draft, ask one more question, or return the result.
+
+The controller should reopen clarification when:
+- an anchor bullet is still `responsibility-only`
+- stronger evidence may plausibly exist
+- one more answer would materially improve the strongest version of the resume
+
+The controller should allow drafting to proceed when:
+- the anchor bullets are already `outcome-backed`, `decision-backed`, or credible `scope-backed`
+- or no stronger evidence exists and the remaining limitation is surfaced honestly
 
 Internally, the controller should think in terms of:
 - `decision`
@@ -267,6 +309,7 @@ Before finalizing, verify:
 - Must-have keywords appear naturally
 - No claims exceed the source material
 - Bullets are concise, consistent, and outcome-oriented
+- The anchor bullets for the target role are not left as `responsibility-only`
 - Remaining gaps are acknowledged instead of hidden
 - Borderline minimum requirements were surfaced before drafting, not hidden until the rationale
 - One primary source narrative remains intact when multiple resumes were provided
