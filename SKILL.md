@@ -127,6 +127,7 @@ Do not let the most important bullets for the target role remain `responsibility
      - "surfaced recurring issues that informed product improvements"
    - Briefly explain why you are asking, for example: "I’m asking this so the final bullets show impact, not just responsibilities."
    - If the user cannot provide stronger evidence, say so internally, then draft the cleanest truthful `scope-backed` bullet available instead of inventing impact.
+   - Do not draft while an anchor bullet is still unresolved on impact, evidence quality, or metric integrity when one more clarification round could materially strengthen it truthfully.
 9. If multiple resumes are provided, select one primary source resume before drafting. Use a second resume only as targeted support for missing evidence, and state that choice in the preflight proposal.
 10. Audit the chosen resume against those signals and note clear strengths, partial matches, and gaps.
 11. Choose a credible narrative that frontloads the most relevant experience without changing facts.

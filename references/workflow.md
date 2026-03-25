@@ -111,6 +111,7 @@ If the user cannot provide stronger evidence after one targeted follow-up round:
 - note internally that no stronger evidence was available
 - rewrite the bullet as the strongest truthful `scope-backed` version you can
 - do not invent metrics or outcomes
+- do not draft while an anchor bullet is still unresolved on impact, evidence quality, or metric integrity when one more clarification round could materially strengthen it truthfully
 - stop entirely only when the missing evidence affects a likely hard screen that makes drafting misleading
 
 ## Step 1: JD Decomposition
