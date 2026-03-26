@@ -1,9 +1,16 @@
 # Structure & Narrative Proposal (Preflight)
 
+Screening Snapshot
+- Minimum requirements met: yes, no, or unclear
+- Likely hard stop: yes, no, or unclear
+- Should the user apply: yes, no, or maybe
+- Why: 1-2 plain-English lines that separate explicit minimum requirements from preferred or contextual experience
+
 Coach's Read
 - Overall fit: strong, medium, or stretch
 - Simple fit score, for example 7/10
 - Is any gap a likely hard stop?
+- Is the gap an explicit minimum requirement or a preference/context signal?
 - Biggest risk
 - What is probably fine
 - Best strategy for this application
@@ -46,6 +53,7 @@ Evidence Risks
 - If stronger evidence does not exist, what is the truthful fallback?
 
 Open Questions
+- Which missing items are true minimum-requirement blockers versus likely screen preferences?
 - Is there any reason to move Core Skills higher for keyword visibility?
 - Which strengths should be the main narrative thread?
 - Any location or seniority preferences to mention?

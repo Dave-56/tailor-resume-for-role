@@ -25,6 +25,7 @@ The user should not see this pipeline directly. The internal modules exist to im
 ## Step 0: Preflight Check-In
 
 If both the job description and the base resume are available, begin with a short `Structure & Narrative Proposal` covering:
+- A blunt `Screening Snapshot`
 - A short `Coach's Read`
 - Positioning for the role
 - Key strengths, partial matches, and gaps
@@ -37,10 +38,25 @@ If both the job description and the base resume are available, begin with a shor
 
 The `Coach's Read` should help the user understand the role without needing to decode the full job description alone.
 
+The `Screening Snapshot` should come first and answer the user's likely screening questions directly.
+
+Include:
+- whether the candidate appears to meet the explicit minimum requirements: `yes`, `no`, or `unclear`
+- whether any gap looks like a likely hard stop: `yes`, `no`, or `unclear`
+- whether the user should apply: `yes`, `no`, or `maybe`
+- 1-2 plain-English lines explaining the answer
+
+The explanation must clearly separate:
+- written minimum requirements from the JD
+- inferred preferences, domain familiarity, or likely screen advantages
+
+If the user asks a direct question such as "is this a fit?", "do I meet the minimum requirements?", or "should I apply?", answer that question before moving into nuance.
+
 Include:
 - overall fit, such as `strong`, `medium`, or `stretch`
 - a simple fit score, for example `7/10`
 - whether any gap looks like a likely hard stop, a real but manageable risk, or just an interview topic
+- whether the gap is a written minimum requirement or a likely preference/context signal
 - the biggest real risk
 - what is probably fine
 - the best application strategy
@@ -50,6 +66,10 @@ The `Open Questions` section should explicitly surface borderline hard-screen it
 - required domain depth
 - required people-management scope
 - required technical background or degree signals
+
+When surfacing gaps, distinguish:
+- explicit minimum requirement misses
+- inferred screen risks that are not actually written minimums
 
 If multiple resumes are available, the preflight must also state:
 - which resume is the **primary** source
@@ -232,7 +252,11 @@ Checks:
 - Are the top 3 JD requirements clearly covered?
 - Does any missing requirement look like a likely hard stop, a manageable risk, or just an interview topic?
 - Were borderline minimum requirements surfaced in preflight and handled honestly?
+- Were written minimum requirements distinguished from likely preferences or domain-screen signals?
 - Produce an internal fit assessment:
+  - minimum requirements met: `yes`, `no`, or `unclear`
+  - likely hard stop: `yes`, `no`, or `unclear`
+  - should apply: `yes`, `no`, or `maybe`
   - overall fit label, such as `strong`, `medium`, or `stretch`
   - simple fit score, for example `7/10`
   - short reason for the score
@@ -280,6 +304,9 @@ The controller should:
 The controller should always surface a fit read to the user.
 - The fit read comes from `Fit QA`.
 - The controller decides the final wording, but it should always include:
+  - minimum requirements met
+  - likely hard stop
+  - should apply
   - overall fit
   - simple fit score
   - short reason

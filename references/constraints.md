@@ -30,6 +30,7 @@ When the candidate lacks a direct requirement:
 - Emphasize adjacent evidence
 - Clarify depth honestly, for example `basic SQL`
 - Use interview positioning notes in the rationale instead of inflating the resume
+- Say clearly whether the missing item is an explicit minimum requirement or only a preference/context signal
 
 ## Failure Modes To Avoid
 
@@ -39,6 +40,8 @@ When the candidate lacks a direct requirement:
 - Seniority inflation
 - Formatting that breaks ATS parsing
 - Hiding meaningful gaps instead of addressing them
+- Calling something a hard stop when the JD does not actually list it as a minimum requirement
+- Burying the direct answer to `apply or not` or `minimum requirements met or not` under too much nuance
 - Merging multiple resume variants into a blurry hybrid story
 - Leaving platform-general or PM-general phrasing when the JD calls for a more specific narrative
 - Returning a draft before checking for duplicate ideas across bullets
