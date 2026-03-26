@@ -1,0 +1,7 @@
+interface:
+  display_name: "Resume Story Guard"
+  short_description: "Story-first resume critique before bullet rewrites."
+  default_prompt: "Use $resume-story-guard to diagnose my resume story, flag conflated experience, and stop before rewriting bullets."
+
+policy:
+  allow_implicit_invocation: true

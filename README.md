@@ -3,6 +3,7 @@
 Portable resume-tailoring skill package for Codex and Claude Code.
 
 This repo also includes a shared `docx` skill under `skills/docx/` so tailored resumes can be delivered as validated Word documents when needed.
+It also includes a stricter companion skill, `resume-story-guard`, for moments when you want story diagnosis before any bullet rewriting.
 
 ## What it does
 
@@ -91,6 +92,23 @@ non_negotiables:
 - do not overstate my SQL depth
 ```
 
+Codex strict story-first example:
+
+```text
+Use $tailor-resume-for-role and $resume-story-guard
+
+job_description:
+[paste JD]
+
+resume:
+[upload .docx or paste resume]
+
+focus:
+- define the cohesive story first
+- flag anything being conflated
+- do not rewrite bullets until the narrative is clear
+```
+
 Claude Code example:
 
 ```text
@@ -106,6 +124,14 @@ skip_preflight: no
 ```
 
 If `skip_preflight` is omitted, the skill should default to preflight first and wait for approval.
+
+When `resume-story-guard` is invoked, it should be more direct and diagnostic than the default flow. It should:
+- restate the single story the resume is actually trying to tell
+- flag adjacent experiences that are being blurred together
+- explain why that weakens the draft for a recruiter or hiring manager
+- hold off on bullet writing until the narrative is coherent
+
+This is especially useful when a prior draft felt rushed, overly blended, or strategically off.
 
 The preflight is meant to feel like a strong career coach, not just a parser. It should:
 - explain overall fit in plain English
@@ -151,6 +177,7 @@ The skill only moves `Core Skills` higher when keyword visibility clearly matter
 
 - `SKILL.md`: main Codex skill instructions
 - `skills/docx/`: shared docx creation and editing skill used for Word resume output
+- `skills/resume-story-guard/`: stricter companion skill for story-first diagnosis before bullet rewrites
 - `agents/openai.yaml`: Codex UI metadata
 - `references/`: shared workflow, constraints, and examples for the Codex package
 - `assets/templates/`: shared output templates for the Codex package
